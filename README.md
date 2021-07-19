@@ -1,6 +1,6 @@
 # phishing site detection
 
-### it uses the trained Random forest classifer to predict whether the specified url is a legitimate or a phishing site. was able to achieve the accuracy of ~97% in test sets
+### this is the web version of phishing site detection. it's a single page web app. it is made using flask and bootstrap
 
 ### live demo : [isitphish]("https://isitphish.herokuapp.com")
 
@@ -8,10 +8,6 @@
 
 ### features extraction by : [Hannousse, Abdelhakim; Yahiouche, Salima (2021)]("https://data.mendeley.com/datasets/c2gw7fy2j4/3")
 
-## confusion matrix
+## home page
 
-<div align="center"><img src="FlaskPhish/assests/confmat.PNG"></div>
-
-## classification report
-
-<div align="center"><img src="FlaskPhish/assests/report.PNG"></div>
+<div align="center"><img src="FlaskPhish/assests/home.png"></div>

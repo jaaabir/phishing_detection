@@ -1,0 +1,85 @@
+{% extends 'base.html' %} {% block title %} isitPhish? {% endblock %} {% block
+content %}
+
+<div class="container" id="container" data-aos="zoom-in">
+  <h3 class="heading">isit phishing?</h3>
+  <form method="GET">
+    <div class="input-group">
+      <div class="form-outline">
+        <input
+          type="search"
+          id="url_input"
+          class="form-control input-lg"
+          name="url_input"
+          placeholder="Enter the URL"
+        />
+      </div>
+      <button type="button" class="btn btn-primary">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="16"
+          height="16"
+          fill="currentColor"
+          class="bi bi-search"
+          viewBox="0 0 16 16"
+        >
+          <path
+            d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"
+          />
+        </svg>
+      </button>
+    </div>
+  </form>
+  <div class="results">
+    {% if error == 0 %} {% if result %}
+    <div class="alert alert-danger" role="alert" id="warning_message">
+      Warning : Detected as a phishing site
+    </div>
+    <div class="img">
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        width="200px"
+        height="200px"
+        fill="currentColor"
+        class="bi bi-exclamation-triangle"
+        viewBox="0 0 16 16"
+      >
+        <path
+          d="M7.938 2.016A.13.13 0 0 1 8.002 2a.13.13 0 0 1 .063.016.146.146 0 0 1 .054.057l6.857 11.667c.036.06.035.124.002.183a.163.163 0 0 1-.054.06.116.116 0 0 1-.066.017H1.146a.115.115 0 0 1-.066-.017.163.163 0 0 1-.054-.06.176.176 0 0 1 .002-.183L7.884 2.073a.147.147 0 0 1 .054-.057zm1.044-.45a1.13 1.13 0 0 0-1.96 0L.165 13.233c-.457.778.091 1.767.98 1.767h13.713c.889 0 1.438-.99.98-1.767L8.982 1.566z"
+        />
+        <path
+          d="M7.002 12a1 1 0 1 1 2 0 1 1 0 0 1-2 0zM7.1 5.995a.905.905 0 1 1 1.8 0l-.35 3.507a.552.552 0 0 1-1.1 0L7.1 5.995z"
+        />
+      </svg>
+    </div>
+    {% else %}
+    <div class="alert alert-success" role="alert" id="warning_message">
+      Its a legitimate site
+    </div>
+    <div class="img">
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        width="200px"
+        height="200px"
+        fill="currentColor"
+        class="bi bi-shield-lock-fill"
+        viewBox="0 0 16 16"
+      >
+        <path
+          fill-rule="evenodd"
+          d="M8 0c-.69 0-1.843.265-2.928.56-1.11.3-2.229.655-2.887.87a1.54 1.54 0 0 0-1.044 1.262c-.596 4.477.787 7.795 2.465 9.99a11.777 11.777 0 0 0 2.517 2.453c.386.273.744.482 1.048.625.28.132.581.24.829.24s.548-.108.829-.24a7.159 7.159 0 0 0 1.048-.625 11.775 11.775 0 0 0 2.517-2.453c1.678-2.195 3.061-5.513 2.465-9.99a1.541 1.541 0 0 0-1.044-1.263 62.467 62.467 0 0 0-2.887-.87C9.843.266 8.69 0 8 0zm0 5a1.5 1.5 0 0 1 .5 2.915l.385 1.99a.5.5 0 0 1-.491.595h-.788a.5.5 0 0 1-.49-.595l.384-1.99A1.5 1.5 0 0 1 8 5z"
+        />
+      </svg>
+    </div>
+    {% endif %} {% elif error == 1 %}
+    <div class="alert alert-warning" role="alert" id="warning_message">
+      Couldnt able to access the url :(
+    </div>
+    {% elif error == 2 %}
+    <div class="alert alert-warning" role="alert" id="warning_message">
+      Please enter the full url with the protocol : http/https
+    </div>
+    {% endif %}
+  </div>
+</div>
+{% endblock %}

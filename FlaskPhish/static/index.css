@@ -1,0 +1,47 @@
+.container {
+  margin: auto;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  top: 100px;
+}
+
+.container .heading {
+  font-family: "Poppins", sans-serif;
+  font-weight: bold;
+  letter-spacing: 1.5px;
+  word-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.container input {
+  width: 100%;
+}
+
+.container .input-group {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 400px;
+}
+
+.container .form-outline {
+  width: 85%;
+}
+
+.container .results {
+  margin-top: 20px;
+}
+
+.results .img {
+  margin-top: 100px;
+}
+@media screen and (max-width: 400) {
+  .container .input-group {
+    width: 100%;
+  }
+}

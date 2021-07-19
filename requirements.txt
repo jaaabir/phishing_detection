@@ -109,11 +109,8 @@ PyScreeze==0.1.26
 python-dateutil==2.8.1
 python-docx==0.8.10
 python-nmap==0.6.1
-pytube==10.4.1
 PyTweening==1.0.3
 pytz==2020.1
-pywin32==228
-pywin32-ctypes==0.2.0
 queuelib==1.5.0
 ratelim==0.1.6
 regex==2020.11.13

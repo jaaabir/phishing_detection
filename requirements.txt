@@ -87,12 +87,10 @@ protobuf==3.12.2
 psycopg2==2.8.6
 pyasn1==0.4.8
 pyasn1-modules==0.2.8
-PyAutoGUI==0.9.50
 pycares==3.1.1
 pycparser==2.20
 PyDispatcher==2.0.5
 pyee==7.0.2
-pygame==1.9.6
 PyGetWindow==0.0.8
 PyHamcrest==2.0.2
 PyInstaller==3.6

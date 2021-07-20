@@ -20,4 +20,4 @@
 
 ## classification report
 
-![classification report](https://github.com/jaaabir/phishing_detection/blob/master/FlaskPhish/assests/report.png)
+![classification report](https://github.com/jaaabir/phishing_detection/blob/master/FlaskPhish/assets/report.png)

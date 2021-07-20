@@ -8,7 +8,7 @@ print(f'templates folder path : {app.template_folder}')
 
 @app.route('/', methods = ['GET'])
 def home():
-    error = 0
+    error = -1
     res = None
     base_url =  None
     if request.args:

@@ -16,4 +16,4 @@
 
 ## home page
 
-![home page](FlaskPhish/assests/home.png)
+![home page](https://github.com/jaaabir/phishing_detection/tree/web/FlaskPhish/assests/home.png)

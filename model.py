@@ -11,13 +11,13 @@ df = pd.read_csv('dataset_phishing.csv')
 def get_features(url):
     x = ef(url, 0)
     x = x[1:47] + x[50:-1] if x is not None else None
-    print(x)
+    print(x)    
     return x
 
 def pred(x, clf):
     x = np.array(x).reshape(1,-1) 
-    
-    return clf.predict(x)    
+    p = clf.predict(x)  
+    return p 
 
 def predict(url, clf):
     replace = {
@@ -34,7 +34,7 @@ def predict(url, clf):
     else:
         x = get_features(url)
         if x == None or len(x) != 83 : return -1
-        result = True if pred(x, clf)[0] == 'legitimate' else False
+        result = False if pred(x, clf)[0] == 'legitimate' else True
     return result
 
     

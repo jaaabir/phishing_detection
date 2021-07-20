@@ -6,7 +6,7 @@ import pickle
 # app = Flask('__main__')
 app = Flask(__name__, template_folder='templates')
 print(f'templates folder path : {app.template_folder}')
-with open('rfcModel','rb') as file:
+with open('svmModel','rb') as file:
     clf = pickle.load(file)
 
 @app.route('/', methods = ['GET'])

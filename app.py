@@ -2,7 +2,8 @@ from os import error
 from flask import Flask, render_template, request, url_for
 from model import predict
 
-app = Flask('__main__')
+# app = Flask('__main__')
+app = Flask(__name__, template_folder='Templates')
 
 
 @app.route('/', methods = ['GET'])

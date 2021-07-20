@@ -3,8 +3,8 @@ from flask import Flask, render_template, request, url_for
 from model import predict
 
 # app = Flask('__main__')
-app = Flask(__name__, template_folder='Templates')
-
+app = Flask(__name__, template_folder='templates')
+print(f'templates folder path : {app.template_folder}')
 
 @app.route('/', methods = ['GET'])
 def home():

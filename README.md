@@ -1,6 +1,8 @@
 # phishing site detection
 
+```
 ### this is the web version of phishing site detection. it's a single page web app. it is made using flask and bootstrap
+```
 
 ### live demo :
 
@@ -16,4 +18,4 @@
 
 ## home page
 
-![home page](https://github.com/jaaabir/phishing_detection/tree/web/FlaskPhish/assests/home.png)
+![home page](https://github.com/jaaabir/phishing_detection/FlaskPhish/assests/home.png)

@@ -4,16 +4,16 @@
 
 ### live demo :
 
-[isitphish]("https://isitphish.herokuapp.com")
+[isitphish](https://isitphish.herokuapp.com)
 
 ### dataset :
 
-[dataset_phishing.csv]("https://www.kaggle.com/shashwatwork/web-page-phishing-detection-dataset")
+[dataset_phishing.csv](https://www.kaggle.com/shashwatwork/web-page-phishing-detection-dataset)
 
 ### features extraction by :
 
-[Hannousse, Abdelhakim; Yahiouche, Salima (2021)]("https://data.mendeley.com/datasets/c2gw7fy2j4/3")
+[Hannousse, Abdelhakim; Yahiouche, Salima (2021)](https://data.mendeley.com/datasets/c2gw7fy2j4/3)
 
 ## home page
 
-![home_page]("./FlaskPhish/assests/home.png")
+![home page](FlaskPhish/assests/home.png)

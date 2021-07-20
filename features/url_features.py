@@ -2,12 +2,12 @@
 # 1 stands for phishing
 
 import re
-
+import os
 
 #LOCALHOST_PATH = "/var/www/html/"
 HINTS = ['wp', 'login', 'includes', 'admin', 'content', 'site', 'images', 'js', 'alibaba', 'css', 'myaccount', 'dropbox', 'themes', 'plugins', 'signin', 'view']
 
-allbrand_txt = open("allbrands.txt", "r")
+allbrand_txt = open("features/allbrands.txt", "r")
 
 def __txt_to_list(txt_object):
     list = []
@@ -17,7 +17,7 @@ def __txt_to_list(txt_object):
     return list
 
 allbrand = __txt_to_list(allbrand_txt)
-#print(allbrand)
+# print(allbrand)
 
 #################################################################################################################################
 #               Having IP address in hostname

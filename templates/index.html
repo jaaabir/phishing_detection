@@ -33,7 +33,7 @@ content %}
   <div class="results">
     {% if error == 0 %} {% if result %}
     <div class="alert alert-danger" role="alert" id="warning_message">
-      Warning : Detected as a phishing site
+      Warning : Detected {{ url }} as a phishing site
     </div>
     <div class="img">
       <svg
@@ -54,7 +54,7 @@ content %}
     </div>
     {% else %}
     <div class="alert alert-success" role="alert" id="warning_message">
-      Its a legitimate site
+      {{ url }} is a legitimate site
     </div>
     <div class="img">
       <svg

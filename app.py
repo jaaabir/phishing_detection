@@ -10,15 +10,17 @@ print(f'templates folder path : {app.template_folder}')
 def home():
     error = 0
     res = None
+    base_url =  None
     if request.args:
         url = request.args['url_input']
         if 'http' in url:
             res = predict(url)
+            base_url = url.split('/')[2]
             error = 1 if res == -1 else 0
         else:
             error = 2
 
-    return render_template('index.html', result = res, fname = 'index.css', error = error)
+    return render_template('index.html', result = res, fname = 'index.css', error = error, url = base_url)
 
 if __name__ == "__main__":
     app.run(threaded = True)
